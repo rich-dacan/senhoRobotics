@@ -17,8 +17,10 @@ body{
 #welcome {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: black;
-  background-color: #74690c;
+  color: #74690c;
+  /* background-color: #111111;  */
+  border-style: dashed;
+  border-color: #111111;
 
 }
 .header .menuNavigation ul{
@@ -53,10 +55,14 @@ body{
 
 
 .preface{
-  background-color:  #74690c;
-  color: #14143b;
+  background-color:  black;
+  color: #1CBF28;
   font-family: 'Courier New', Courier, monospace;
 }
+#hello{
+  /* margin:20px; */
+  color: #FFFFFF
+} 
 .preface h1{
   text-align: end;
   margin-top: -20px;
