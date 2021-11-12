@@ -1,47 +1,86 @@
-.container --menuNavigator{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/*Configurações Globais*/
+*{
+  box-sizing: border-box;
 }
-.initial ul{
-  list-style-type: none;
-  display: flex; 
+body{
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #111111;
+  margin:0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
-.initial a{
-  padding-left:30px;
-  color: black;
-  border: groove 2px;
-  border-radius: 4px;
-}
-.welcome {
+
+/*Menu de navegação*/
+#welcome {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  width: 100%;
-  color: #14143b;
-  background-color: #FFCC00;
-  margin-top: 0;
+  color: black;
+  background-color: #74690c;
 
 }
+.header .menuNavigation ul{
+  list-style-type: none;  /*Remove os ícones da lista*/
+  display:flex;
+  font-variant: small-caps;
+  /* border-style: double;
+  border-radius:10px; 
+  border-top: 10px ; */
+}
+.header .menuNavigation a{
+
+  padding:30px 50px;
+  font-size:20px;
+  color: #111111;
+  text-decoration: none; /* Remove o sublinhado do link  */
+} 
+.img-profile{
+  z-index: auto;
+  margin:30px 30px -30px;
+  height: 250px;
+  border: dotted; 
+  position: relative;
+  clip-path:ellipse() ;
+}
+.container_cover{
+  background-image:url(https://i.ytimg.com/vi/kkVGBn-haDo/maxresdefault.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
 .preface{
-  background-color: #FFCC00;
+  background-color:  #74690c;
+  color: #14143b;
   font-family: 'Courier New', Courier, monospace;
 }
 .preface h1{
-  /* margin-left: 300px; */
   text-align: end;
   margin-top: -20px;
 }
 .preface p {
   text-align: center;
 }
-.img-profile{
-  margin: 20px 20px 20px 10px;
-  height: 150px;
-  border: dotted; 
-  position: relative;
-  clip-path:ellipse() ;
+.container{
+  text-align: center;
 }
+
+
+/*FOOTER*/
 #github{
-  height:100px;
+  height:50px;
 }
 #insta{
-  height:85px;
-  margin:1%;
+  height:42.5px;
+  margin: 4px;
 }
+#copy{
+  text-align: center;
+}
+
+/*Paleta usada: #74690c = dourado
+#14143b = azul escuro
+ */
