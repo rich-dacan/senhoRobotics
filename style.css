@@ -9,6 +9,7 @@ body{
   background-color: #FFFFFF;
   color: #111111;
   margin:0;
+  padding:0;
   width: 100%;
   font-family: 'Roboto', sans-serif;
 }
@@ -23,13 +24,13 @@ body{
   border-color: #111111;
 
 }
+.header .menuNavigation{
+  text-align: center;
+  display: flex;
+}
 .header .menuNavigation ul{
   list-style-type: none;  /*Remove os ícones da lista*/
-  display:flex;
-  font-variant: small-caps;
-  /* border-style: double;
-  border-radius:10px; 
-  border-top: 10px ; */
+  font-variant: small-caps; /*Mantêm apenas a primeira leta maiúscula e as outras minúsculas*/
 }
 .header .menuNavigation a{
 
@@ -42,32 +43,31 @@ body{
   z-index: auto;
   margin:30px 30px -30px;
   height: 250px;
-  border: dotted; 
+  border: dotted;  
   position: relative;
-  clip-path:ellipse() ;
+  clip-path:ellipse(100px 150px ) ;
 }
 .container_cover{
   background-image:url(https://i.ytimg.com/vi/kkVGBn-haDo/maxresdefault.jpg); 
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 30px;
 }
 
 
 
-.preface{
+#preface{
   background-color:  black;
   color: #1CBF28;
   font-family: 'Courier New', Courier, monospace;
+  padding: 50px;
 }
-#hello{
-  /* margin:20px; */
-  color: #FFFFFF
-} 
-.preface h1{
+#preface h1{
   text-align: end;
   margin-top: -20px;
+  color: #FFFFFF;
 }
-.preface p {
+#preface p {
   text-align: center;
 }
 .container{
