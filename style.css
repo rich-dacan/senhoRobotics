@@ -2,7 +2,7 @@
 
 /*Configurações Globais*/
 *{
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 body{
   align-items: center;
@@ -16,42 +16,80 @@ body{
 
 /*Menu de navegação*/
 #welcome {
+  position: sticky;
+  top: 0;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #74690c;
-  /* background-color: #111111;  */
+  background-color: #111111; 
   border-style: dashed;
   border-color: #111111;
+  padding: 15px;
+  margin-top: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
 
 }
-.header .menuNavigation{
-  text-align: center;
-  display: flex;
+#github{
+  position: fixed;
+  top: 5px;
+  right: 50px;
+  height:50px;
 }
-.header .menuNavigation ul{
+#home, #destaque, #artigos, #sugestoes {
+  display: inline-block;
+  padding: 10px 35px;
+  /* margin: auto; */
+  opacity: 1;
+  transition: all ease 0.7s;
+  border-radius: 5px;
+  border:3px solid black;
+  
+}
+#home:hover, #destaque:hover, #artigos:hover, #sugestoes:hover{
+  opacity: 0.9;
+  background: #74690c;
+  color: #FFFFFF;
+  font-weight: bold;
+
+} 
+.menuNavigation{
+  
+  /* text-align: center; */
+  /* display: flex ;  */
+  /*  Este atributo está atrapalhando a centralização do menu em multi-plataformas. Consertar isso */
+}
+.menuNavigation ul{
   list-style-type: none;  /*Remove os ícones da lista*/
   font-variant: small-caps; /*Mantêm apenas a primeira leta maiúscula e as outras minúsculas*/
 }
-.header .menuNavigation a{
-
-  padding:30px 50px;
+.menuNavigation li{
+  float: left;
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 40px;
+  
+}
+.menuNavigation a{
   font-size:20px;
   color: #111111;
   text-decoration: none; /* Remove o sublinhado do link  */
 } 
 .img-profile{
-  z-index: auto;
-  margin:30px 30px -30px;
+  margin: auto;
   height: 250px;
   border: dotted;  
   position: relative;
+  right: 50px;
+  /* left: -50px; */
   clip-path:ellipse(100px 150px ) ;
 }
 .container_cover{
   background-image:url(https://i.ytimg.com/vi/kkVGBn-haDo/maxresdefault.jpg); 
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 30px;
+  padding: 50px;
+  margin-top: 100px;
 }
 
 
@@ -70,16 +108,37 @@ body{
 #preface p {
   text-align: center;
 }
+
 .container{
+  text-align: justify;
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+.container h2{
   text-align: center;
 }
+#mr, #mr3{
+  float: left;
+  height:200px;
+  width: 250px;
+  padding: 20px;
+}
+#mr1{
+  float: right;
+  height: 200px;
+  width: 250px;
+  padding: 20px;
+  
+}
+
 
 
 /*FOOTER*/
-#github{
-  height:50px;
-}
+
 #insta{
+  position: relative;
   height:42.5px;
   margin: 4px;
 }
@@ -89,4 +148,4 @@ body{
 
 /*Paleta usada: #74690c = dourado
 #14143b = azul escuro
- */
+#1CBF28 = Green Matrix */
