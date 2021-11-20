@@ -39,7 +39,6 @@ body{
 #home, #destaque, #artigos, #sugestoes {
   display: inline-block;
   padding: 10px 35px;
-  /* margin: auto; */
   opacity: 1;
   transition: all ease 0.7s;
   border-radius: 5px;
@@ -90,6 +89,7 @@ body{
   background-repeat: no-repeat;
   padding: 50px;
   margin-top: 100px;
+  border-top: 10px solid #74690c;
 }
 
 
@@ -149,3 +149,4 @@ body{
 /*Paleta usada: #74690c = dourado
 #14143b = azul escuro
 #1CBF28 = Green Matrix */
+
