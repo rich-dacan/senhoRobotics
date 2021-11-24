@@ -12,6 +12,7 @@ body{
   padding:0;
   width: 100%;
   font-family: 'Roboto', sans-serif;
+
 }
 
 /*Menu de navegação*/
@@ -24,8 +25,9 @@ body{
   background-color: #111111; 
   border-style: dashed;
   border-color: #111111;
+  border-top: 10px solid #74690c;
   padding: 15px;
-  margin-top: 70px;
+  margin-top: 0px;
   margin-left: 20px;
   margin-right: 20px;
 
@@ -35,79 +37,80 @@ body{
   top: 5px;
   right: 50px;
   height:50px;
+
 }
 #home, #destaque, #artigos, #sugestoes {
-  display: inline-block;
   padding: 10px 35px;
-  opacity: 0.7;
-  transition: all ease 0.5s;
-  border-radius: 5px;
+  opacity: 0.8;
+  transition: all ease 0.3s;
+  /* border-radius: 5px;
   border:3px solid black;
   background: #74690c;
-  font-weight: bold;
+  font-weight: bold; */
+
 }
 #home:hover, #destaque:hover, #artigos:hover, #sugestoes:hover{
   opacity: 1;
-  background: #74690c;
+  background: rgb(48, 45, 45);
   color: #FFFFFF;
-  /* font-weight: bold; */
+  border-radius: 5px;
+  border-bottom: 7px solid #74690c;
+  font-weight: bold;
 
 } 
-.menuNavigation{
-  
-  /* text-align: center; */
-  /* display: flex ;  */
-  /*  Este atributo está atrapalhando a centralização do menu em multi-plataformas. Consertar isso */
-}
 .menuNavigation ul{
   list-style-type: none;  /*Remove os ícones da lista*/
   font-variant: small-caps; /*Mantêm apenas a primeira leta maiúscula e as outras minúsculas*/
+
 }
 .menuNavigation li{
-  float: left;
-  margin-top: 10px;
-  margin-right: 50px;
-  margin-left: 40px;
+  /* display: inline-block; */
+  float: right;  /* Permite visualizar a lista lado a lado */
+  margin:0;
+  padding: 0;
+  /* margin-left: 10px;
+  margin-bottom: 20px; */
   
 }
 .menuNavigation a{
   font-size:20px;
   color: #111111;
   text-decoration: none; /* Remove o sublinhado do link  */
+
 } 
 .img-profile{
-  margin: auto;
-  height: 250px;
+  float: left;
+  height: 200px;
   border: dotted;  
-  position: relative;
-  right: 50px;
-  /* left: -50px; */
-  clip-path:ellipse(100px 150px ) ;
+  /* position: relative; */
+  clip-path:ellipse(100px 150px);
+
 }
 .container_cover{
   background-image:url(https://i.ytimg.com/vi/kkVGBn-haDo/maxresdefault.jpg); 
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 50px;
-  margin-top: 100px;
+  padding: 100px;
+  margin-top: 39px;
   border-top: 10px solid #74690c;
+
 }
-
-
-
 #preface{
-  background-color:  black;
+  background-color:black;
   color: #1CBF28;
   font-family: 'Courier New', Courier, monospace;
   padding: 50px;
+
 }
 #preface h1{
   text-align: end;
-  margin-top: -20px;
+  margin-bottom: 20px;
   color: #FFFFFF;
+
 }
 #preface p {
   text-align: center;
+
 }
 
 .container{
@@ -119,12 +122,14 @@ body{
 }
 .container h2{
   text-align: center;
+
 }
 #mr, #mr3{
   float: left;
   height:200px;
   width: 250px;
   padding: 20px;
+
 }
 #mr1{
   float: right;
@@ -145,6 +150,18 @@ body{
 }
 #copy{
   text-align: center;
+}
+
+@media screen and (max-width:601px) {
+  .menuNavigation li{
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .container_cover{
+    margin-top: -15px;
+  }
+  
 }
 
 /*Paleta usada: #74690c = dourado
